@@ -39,7 +39,8 @@ export default {
      this.scroll.on("pullingUp",() => {
       // console.log(position);
       // console.log("shangla");
-      this.$emit("pullingUp");
+      this.$emit('pullingUp');
+      // this.$emit("pullingUp");
     });
   },
   methods: {
@@ -47,9 +48,10 @@ export default {
      this.scroll && this.scroll.scrollTo(x, y, time);
     },
     finishPullUp(){
-     this.scroll &&  this.scroll.finishPullUp()
+     this.scroll && this.scroll.finishPullUp()
     },
     refresh(){
+      console.log("----");
      this.scroll &&  this.scroll.refresh();
     }
   },

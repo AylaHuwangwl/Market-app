@@ -40,7 +40,7 @@ export default {
   line-height: 40px;
   background-color: #fff;
   position: sticky;
-  top:40px;
+  /* top:40px; */
   z-index: 9;
 }
 .tab-control-item {
